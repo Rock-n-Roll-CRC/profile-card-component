@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  color: #6a6f81;
+  background-color: #19a2ae;
+  font: 400 18px "Kumbh Sans", sans-serif;
+}
+
+.visually-hidden:not(:focus, :active) {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.bg-pattern-top {
+  position: absolute;
+  top: -600px;
+  left: -755px;
+  z-index: 0;
+}
+
+.bg-pattern-bottom {
+  position: absolute;
+  bottom: -605px;
+  right: -755px;
+  z-index: 0;
+}
+
+@media all and (min-width: 1000px) {
+  .bg-pattern-top {
+    top: -500px;
+    left: -300px;
+  }
+
+  .bg-pattern-bottom {
+    bottom: -650px;
+    right: -230px;
+  }
+}
